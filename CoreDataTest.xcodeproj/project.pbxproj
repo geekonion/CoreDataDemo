@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AB9C9F7207F8AE7009D6830 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AB9C9F6207F8AE7009D6830 /* test.txt */; };
 		C49882D91D6EC8940080A44D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C49882D81D6EC8940080A44D /* main.m */; };
 		C49882DC1D6EC8940080A44D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C49882DB1D6EC8940080A44D /* AppDelegate.m */; };
 		C49882DF1D6EC8940080A44D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49882DE1D6EC8940080A44D /* ViewController.m */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AB9C9F6207F8AE7009D6830 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		C49882D41D6EC8940080A44D /* CoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49882D81D6EC8940080A44D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C49882DA1D6EC8940080A44D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		C49882CB1D6EC8940080A44D = {
 			isa = PBXGroup;
 			children = (
+				5AB9C9F6207F8AE7009D6830 /* test.txt */,
 				C49882D61D6EC8940080A44D /* CoreDataTest */,
 				C49882D51D6EC8940080A44D /* Products */,
 			);
@@ -157,6 +160,7 @@
 			files = (
 				C49882EA1D6EC8940080A44D /* LaunchScreen.storyboard in Resources */,
 				C49882E71D6EC8940080A44D /* Assets.xcassets in Resources */,
+				5AB9C9F7207F8AE7009D6830 /* test.txt in Resources */,
 				C49882E21D6EC8940080A44D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

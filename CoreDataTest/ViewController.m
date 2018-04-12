@@ -23,6 +23,7 @@
 @implementation ViewController{
     NSInteger curPage;
     NSInteger _count;
+    NSString *string;
 }
 
 - (void)viewDidLoad {
@@ -107,17 +108,23 @@
         
         obj.score = @(i);
         obj.username = @"将军大道";
+        //将username赋值string，username类型改为transformable时，比String时，数据库大了一倍
+//        if (!string) {
+//            NSString *path = [[NSBundle mainBundle] pathForResource:@"test.txt" ofType:nil];
+//            string = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+//        }
+//        obj.username = string;
         obj.userinfo = model;
         obj.uid = i;
         
-        [self.app_delegate saveContext];    //! < 持久化到本地
+//        [self.app_delegate saveContext];    //! < 持久化到本地
         
         if (i % 1000 == 0 && i != 0) {
             NSLog(@"第%zd条", i);
         }
     }
     
-//    [self.app_delegate saveContext];
+    [self.app_delegate saveContext];
     
     NSLog(@"添加完毕");
 }
@@ -216,10 +223,10 @@
     
     curPage ++;
     
-//    for (Test *obj in array) {
-//        UserInfoModel *model = obj.userinfo;
-//        NSLog(@"序号：%zd | %@ | %02ld | %02ld | %@ | %@\n", obj.uid, obj.username, model.age, [obj.score integerValue], model.sex ? @"男" : @"女", model.address);
-//    }
+    for (Test *obj in array) {
+        UserInfoModel *model = obj.userinfo;
+        NSLog(@"序号：%zd | %@ | %02ld | %02ld | %@ | %@\n", obj.uid, obj.username, model.age, [obj.score integerValue], model.sex ? @"男" : @"女", model.address);
+    }
     NSLog(@"共有%zd条数据", array.count);
 }
 
